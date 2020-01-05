@@ -1,0 +1,77 @@
+body{
+    font-family:public-sans;
+}
+#container img{
+    width:250px;
+    height:300px;
+    border-radius:50%;
+}
+#container{
+    margin:30px;
+}
+#bio{
+    float:right;
+}
+#numbers{
+    display:grid;
+    grid-template-rows:50px 50px 50px;
+    grid-template-columns:250px 250px 250px;
+}
+#numbers p{
+    line-height:10px;
+    text-align:center;
+}
+.rating{
+    font-size:40px;
+    font-weight:bold;
+}
+.follow{
+    font-size:30px;
+    color:#a39f9f;
+}
+button{
+    width:750px;
+    height:80px;
+    background:#fff;
+    text-align:center;
+    font-size:50px;
+    font-weight:lighter;
+    font-family:public sans;
+    border:1px solid #a39f9f;
+    border-radius:10px;
+}
+#name{
+    font-weight:bolder;
+    font-size:40px;
+    line-height:5px;
+}
+#occupation{
+    color:#a39f9f;
+    font-size:25px;
+    line-height:2px;
+}
+.info{
+    font-size:25px;
+    line-height:10px;
+}
+#icons{
+    width:100%;
+    height:120px;
+    border-bottom:1px solid #a39f9f;
+    border-top:1px solid #a39f9f;
+    text-align:center;
+}
+i{
+    font-size:100px;
+    padding:10px 150px;
+    font-weight:lighter;
+}
+#photos img{
+    width:420px;
+    height:400px;
+}
+#photos{
+    display:grid;
+    grid-template-rows:1fr 1fr 1fr;
+    grid-template-columns:1fr 1fr 1fr;
+}
