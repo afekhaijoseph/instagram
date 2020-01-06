@@ -27,7 +27,7 @@ body{
 }
 .follow{
     font-size:30px;
-    color:#a39f9f;
+    color: #a39f9f;
 }
 button{
     width:750px;
@@ -37,7 +37,7 @@ button{
     font-size:50px;
     font-weight:lighter;
     font-family:public sans;
-    border:1px solid #a39f9f;
+    border:1px solid #d4d4d4;;
     border-radius:10px;
 }
 #name{
@@ -57,8 +57,8 @@ button{
 #icons{
     width:100%;
     height:120px;
-    border-bottom:1px solid #a39f9f;
-    border-top:1px solid #a39f9f;
+    border-bottom:1px solid #d4d4d4;;
+    border-top:1px solid #d4d4d4;;
     text-align:center;
 }
 i{
