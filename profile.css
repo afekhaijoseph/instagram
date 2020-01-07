@@ -1,8 +1,8 @@
 body{
-    font-family:public-sans;
+    font-family:nanum gothic;
 }
 #container img{
-    width:250px;
+    width:300px;
     height:300px;
     border-radius:50%;
 }
@@ -29,16 +29,19 @@ body{
     font-size:30px;
     color: #a39f9f;
 }
+
 button{
     width:750px;
     height:80px;
     background:#fff;
     text-align:center;
-    font-size:50px;
+    font-size:45px;
     font-weight:lighter;
-    font-family:public sans;
     border:1px solid #d4d4d4;;
     border-radius:10px;
+}
+#bios{
+    padding:10px;
 }
 #name{
     font-weight:bolder;

@@ -1,5 +1,5 @@
 body{
-    font-family:public sans;
+    font-family:nanum gothic;
     margin:0;
     padding:0;
 }
@@ -19,7 +19,7 @@ body{
     padding:0 15px;
 }
 #caption{
-    padding:10px 0 10px 10px;
+    padding:15px 0 5px 20px;
     border-bottom:1px solid #d4d4d4;
 }
 
@@ -48,13 +48,14 @@ body{
     width:90%;
 }
 .comment-list{
-    padding:0 10px;
+    padding:0 20px;
 }
 .fa-heart{
     float:right;
 }
 #your-comment{
     border-top:1px solid #d4d4d4;
+    padding-left:20px;
 }
 #your-comment img{
     width:100px;
