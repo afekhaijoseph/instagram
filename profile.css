@@ -1,3 +1,4 @@
+
 body{
     font-family:nanum gothic;
 }
@@ -7,74 +8,153 @@ body{
     border-radius:50%;
 }
 #container{
-    margin:30px;
+    margin:20px;
 }
 #bio{
     float:right;
 }
+li{
+    display:inline-block;
+    padding:0 50px;
+}
 #numbers{
-    display:grid;
-    grid-template-rows:50px 50px 50px;
-    grid-template-columns:250px 250px 250px;
+    margin-right:30px;
 }
 #numbers p{
     line-height:10px;
     text-align:center;
 }
 .rating{
-    font-size:40px;
+    font-size:3.5vw;
     font-weight:bold;
 }
 .follow{
-    font-size:30px;
+    font-size:2vw;
     color: #a39f9f;
 }
-
+#click-profile{
+    max-width:750px;
+}
 button{
-    width:750px;
-    height:80px;
+    width:100%;
+    height:auto;
     background:#fff;
     text-align:center;
-    font-size:45px;
+    font-size:4.5vw;
     font-weight:lighter;
     border:1px solid #d4d4d4;;
     border-radius:10px;
 }
 #bios{
-    padding:10px;
+    padding:30px;
 }
 #name{
     font-weight:bolder;
-    font-size:40px;
-    line-height:5px;
+    font-size:3vw;
+    line-height:0.5vw;
 }
 #occupation{
     color:#a39f9f;
-    font-size:25px;
+    font-size:2vw;
     line-height:2px;
 }
 .info{
-    font-size:25px;
+    font-size:2vw;
     line-height:10px;
 }
 #icons{
     width:100%;
-    height:120px;
+    height:auto;
     border-bottom:1px solid #d4d4d4;;
     border-top:1px solid #d4d4d4;;
     text-align:center;
+    display:block;
 }
 i{
-    font-size:100px;
-    padding:10px 150px;
+    font-size:10vw;
+    padding:10px 100px;
     font-weight:lighter;
 }
 #photos img{
-    width:420px;
-    height:400px;
+    width:330px;
+    height:360px;
 }
 #photos{
     display:grid;
     grid-template-rows:1fr 1fr 1fr;
     grid-template-columns:1fr 1fr 1fr;
+    grid-gap:5px;
+}
+@media (max-width:1024px){
+    button{
+        width:100%;
+        margin:10px 0;
+    }
+    #container img{
+        width:170px;
+        height:170px;
+        border-radius:50%;
+        margin:20px 0 0 40px;
+    }
+    i{
+        padding:0 70px;
+    }
+    #photos img{
+        width:100%;
+    }
+    #photos{
+        display:grid;
+        grid-template-rows:1fr 1fr;
+        grid-template-columns:1fr 1fr;
+        grid-gap:5px;
+    }
+    .rating{
+        font-size:calc(5px + 3vw);
+    }
+    .follow{
+        font-size:calc(3px + 3vw);
+    }
+    #name{
+        font-size:calc(6px + 3vw);
+    }
+    .info{
+        font-size:calc(6px + 3vw);
+    }
+    #occupation{
+        font-size:calc(6px + 3vw);
+    }
+}
+@media(max-width:770px){
+    li{
+        padding:0 20px;
+    }
+}
+@media(max-width:500px){
+    #container img{
+        width:100px;
+        height:100px;
+        border-radius:50%;
+        margin-left:10px;
+    }
+    #photos{
+        display:grid;
+        grid-template-rows:1fr;
+        grid-template-columns:1fr;
+        grid-gap:5px;
+    }
+    #container{
+        text-align:center;
+    }
+    #bio{
+        float:none;
+    }
+    .fa-list-alt{
+        display:none;
+    }
+    .fa-portrait{
+        display:none;
+    }
+    li{
+        padding:0 10px;
+    }
 }

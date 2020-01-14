@@ -5,15 +5,17 @@ body{
 }
 #head{
    width:97%;
-   font-size:35px;
+   font-size:2.5vw;
    border-bottom:1px solid #d4d4d4;
-   padding:0 20px;
+   padding:0 10px;
    font-weight: lighter;
    position:fixed;
+   z-index:999;
    background:#fff;
 }
 .fa-paper-plane{
     float:right;
+    padding-right:30px;
 }
 .fa-arrow-left{
     padding:0 15px;
@@ -24,16 +26,18 @@ body{
 }
 
 .resize{
-    width:100px;
-    height:100px;
+    width:9vw;
+    height:9vw;
     border-radius: 50%;
-    display:inline-block;
     float:left;
+    margin-right:10px;
+    position:relative;
+    top:20px;
 }
 #caption-info{
     display:inline-block;
     margin-left:10px;
-    font-size:20px;
+    font-size:1.7vw;
 }
 #fix-header{
     padding-top:100px;
@@ -42,15 +46,18 @@ body{
     color:gray;
 }
 .actual-comment{
-    display:inline-block;
-    margin-left:10px;
-    font-size:20px;
+    margin-left:50px;
+    font-size:calc(3px + 1.5vw);
     width:90%;
 }
 .comment-list{
-    padding:0 20px;
-}
+    padding:5px 15px 0 15px;
+    position:relative;
+} 
 .fa-heart{
+    position:absolute;
+    bottom:15px;
+    left:95%;
     float:right;
 }
 #your-comment{
@@ -58,24 +65,69 @@ body{
     padding-left:20px;
 }
 #your-comment img{
-    width:100px;
-    height:100px;
+    width:9vw;
+    height:9vw;
     border-radius:50%;
     float:left;
 }
 input{
-    width:80%;
+    width:70%;
     height:100px;
-    font-size:30px;
+    font-size:calc(6px + 2vw);
     border:none;
     margin-left:20px;
 }
+
 #your-comment button{
-    width:120px;
-    height:100px;
-    font-size:30px;
+    width:15%;
+    height:auto;
+    float:right;
+    padding-top:30px;
+    font-size:calc(6px + 2vw);
     background:#fff;
     border:none;
     color:#265da5;
     opacity:0.5;
 }
+@media(max-width:1038px){
+    #head{
+        font-size:calc(7px + 3vw);
+    }
+    #caption-info{
+        font-size:calc(5px + 3vw);
+    }
+    .actual-comment{  
+         font-size:calc(5px + 3vw);
+    }
+    .fa-paper-plane{
+        padding-left:10px;
+    }
+    .fa-heart{
+        position:absolute;
+        bottom:15px;
+        left:90%;
+    }
+    input{
+        width:60%;
+        height:auto;
+    }
+    input{
+        width:70%;
+        height:100px;
+        font-size:calc(6px + 3vw);
+        border:none;
+        margin-left:20px;
+    }
+    #fix-header{
+        padding-top:150px;
+      }
+    
+    #your-comment button{
+        font-size:calc(4px + 3vw);
+    }
+}
+@media (max-width:420px){
+     #fix-header{
+       padding-top:60px;
+     }
+    }

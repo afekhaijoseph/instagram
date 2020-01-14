@@ -1,3 +1,6 @@
+*{
+    box-sizing:border-box;
+}
 body{
     width: 100%;
     padding:0;
@@ -12,11 +15,11 @@ body{
     background:#fff;
 }
 #head{
-    padding-top:80px;
+    padding-top:100px;
 }
 h1 {
     font-family:pacifico;
-    font-size:40px;
+    font-size:3vw;
     border-bottom:1px solid #d4d4d4;
     padding:0 50px 10px 50px;
     margin:0;
@@ -31,14 +34,19 @@ i{
     padding:10px;
 }
 #floating-heads{
-    width:100%;
+    max-width:1500px;
+    height:auto;
+    white-space:nowrap;
+    overflow-x:scroll;
+    overflow-y:hidden;
+}
+#floating-heads::-webkit-scrollbar{
+    display:none;
 }
 li{
     display:inline-block;
     vertical-align:top;
-    text-align:center;
     list-style:none;
-    
 }
 li .follow-head{
     border-radius:50%;
@@ -49,18 +57,19 @@ li #user-head{
     padding-right:20px;
 }
 #user-head{
-    width:150px;
-    height:180px;
+    width:13vw;
+    height:13vw;
     border-radius:95%;
     margin:20px 10px 30px -20px;
     padding:-20px 0;
     text-align:center;
 }
 .follow-head{
-    width:170px;
-    height:170px;
-    margin:10px;
+    width:14vw;
+    height:14vw;
+    margin:10px 10px -20px 10px;
     border-radius:90px;
+    overflow: hidden;
 }
 caption{
     display:block;
@@ -71,40 +80,127 @@ caption{
     padding:5px 20px;
 }
 #poster-dp{
-    width:70px;
-    height:70px;
+    width:6vw;
+    height:6vw;
     border-radius:50%;
-    text-align:center;
     float:left;
 }
 #poster-name{
-    font-size:25px;
-    display:inline-block;
+    font-size:2vw;
+    display:inline;
     padding-left:5px;
 }
 .fa-ellipsis-v{
+    font-size:3vw;
+    display:inline;
     float:right;
-    font-size:35px;
-    font-weight:lighter;
-    margin-top:10px;
 }
 #poster-image{
     width: 100%;
     overflow:hidden;
-    margin:0;
+    margin:5px;
 }
 #poster-action{
-    font-size:50px;
+    font-size:3vw;
     padding:0 20px;
 }
 .fa-bookmark{
     float:right;
 }
+#last{
+    padding-bottom:70px;
+}
 #last p{
-    font-size:20px;
+    font-size:2vw;
     padding-left:20px;
 }
 a{
     text-decoration: none;
     color:gray;
+}
+#nav{
+    width:100%;
+    height:auto;
+    border-top:1px solid #d4d4d4;
+    background:#fff;
+    position:fixed;
+    bottom:0;
+    z-index:999;
+}
+#nav i{
+    font-size:4vw;
+    padding:10px 100px;
+}
+@media(max-width:1030px){
+    h1{
+        font-size:calc(5px + 5vw);
+    }
+    #icons{
+        font-size:calc(5px + 3vw);
+    }
+    #poster-name{
+        font-size:calc(5px + 3vw);
+    }
+    .fa-ellipsis-v{
+        font-size:calc(5px + 3vw);
+    }
+    #poster-action{
+        font-size:calc(5px + 4vw);
+    }
+    #last p{
+        font-size:calc(5px + 3vw);
+    }    
+    #poster-dp{
+        height:10vw;
+        width:10vw;
+    }
+    #nav i{
+        font-size:4vw;
+        padding:10px 80px;
+
+    }
+}
+@media (max-width:420px){
+    #head{
+        padding:40px 0 0 0;
+    }
+    #user-head{
+        width:80px;
+        height:70px;
+        margin-top:15px;
+        margin-bottom:-10px;
+        margin-right:-15px;
+        margin-left:-30px;
+        padding-bottom:10px;
+    }
+    .follow-head{
+        width:17vw;
+        height:17vw;
+        margin:10px 5px -40px 5px;
+    }
+    li .follow-head{
+        border:double 3px transparent;
+    }
+    #poster-dp{
+        height:9vw;
+        width:9vw;
+    }
+    h1{
+        padding:0 5px;
+    }
+    #poster-action{
+        padding:0 5px;
+    }
+    #poster-head{
+        padding:7px 10px;
+    }
+    #nav i{
+        font-size:4vw;
+        padding:10px 28px;
+
+    }
+    #nav a{
+        text-decoration:none;
+        color:#000;
+    }
 }
